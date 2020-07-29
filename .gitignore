@@ -1,0 +1,9 @@
+*.swp
+*.pem
+*.pyc
+config/*
+build/*
+dist/*
+pymisp.egg-info/*
+.coverage
+.idea
