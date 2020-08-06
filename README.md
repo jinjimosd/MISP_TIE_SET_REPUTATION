@@ -8,16 +8,16 @@
 
 Step 0: Active MISP_TIE_SET_REPUTATION project (you can change project name)
 
-  source MISP_TIE_SET_REPUTATION/bin/activate
+  - source MISP_TIE_SET_REPUTATION/bin/activate
 
 Step 1: Install PyMISP
   
-  pip3 install wheel
-  pip3 install pymisp
+  - pip3 install wheel
+  - pip3 install pymisp
   
 Step 2: Install requests
 
-  pip3 install requests
+  - pip3 install requests
   
 Step 3: Download OpenDXL SDK zip file and OpendDXL TIE SDK zip file, and install them:
 
@@ -25,11 +25,11 @@ Step 3: Download OpenDXL SDK zip file and OpendDXL TIE SDK zip file, and install
   - Go to site https://github.com/opendxl/opendxl-tie-client-python/releases/tag/0.3.0 and download OpendDXL TIE SDK zip file
   - Go to folder contain 2 zips file and unzip, install file .whl (Example is Downloads folder)
   
-    cd Downloads/
-    unzip dxlclient-python-sdk-5.6.0.3.zip
-    unzip dxltieclient-python-dist-0.3.0.zip
-    pip3 install dxlclient-python-sdk-5.6.0.3/lib/dxlclient-5.6.0.3-py2.py3-none-any.whl
-    pip3 install dxltieclient-python-dist-0.3.0/lib/dxltieclient-0.3.0-py2.py3-none-any.whl
+  - cd Downloads/
+  - unzip dxlclient-python-sdk-5.6.0.3.zip
+  - unzip dxltieclient-python-dist-0.3.0.zip
+  - pip3 install dxlclient-python-sdk-5.6.0.3/lib/dxlclient-5.6.0.3-py2.py3-none-any.whl
+  - pip3 install dxltieclient-python-dist-0.3.0/lib/dxltieclient-0.3.0-py2.py3-none-any.whl
   
   
 *Configuration: 
@@ -37,19 +37,19 @@ Step 3: Download OpenDXL SDK zip file and OpendDXL TIE SDK zip file, and install
   
 Step 1: move to MISP_TIE_SET_REPUTATION project and create config folder
 
-  cd MISP_TIE_SET_REPUTATION/
-  mkdir config
+  - cd MISP_TIE_SET_REPUTATION/
+  - mkdir config
   
 Step 2: create Command Line Provisioning
 
-  dxlclient provisionconfig config myserver client1 -u myuser -p mypass
+  - dxlclient provisionconfig config myserver client1 -u myuser -p mypass
   
   - In this:
-    config: config folder
-    myserver: EPO server ip
-    client1: ip client
-    myuser: EPO server username
-    mypass: EPO server password
+    + config: config folder
+    + myserver: EPO server ip
+    + client1: ip client
+    + myuser: EPO server username
+    + mypass: EPO server password
     
   On success, output similar to the following should be displayed:
     INFO: Saving csr file to config/client.csr
