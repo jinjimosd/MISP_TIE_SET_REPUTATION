@@ -47,11 +47,11 @@ Step 2: create Command Line Provisioning
   - In this: config: config folder, myserver: EPO server ip, client1: ip client, myuser: EPO server username, mypass: EPO server password.
     
   - On success, output similar to the following should be displayed:
-    INFO: Saving csr file to config/client.csr
-    INFO: Saving private key file to config/client.key
-    INFO: Saving DXL config file to config/dxlclient.config
-    INFO: Saving ca bundle file to config/ca-bundle.crt
-    INFO: Saving client certificate file to config/client.crt
+    + INFO: Saving csr file to config/client.csr
+    + INFO: Saving private key file to config/client.key
+    + INFO: Saving DXL config file to config/dxlclient.config
+    + INFO: Saving ca bundle file to config/ca-bundle.crt
+    + INFO: Saving client certificate file to config/client.crt
     
   Step 3: create misp_key.ini
     + vim config/misp_key.ini
